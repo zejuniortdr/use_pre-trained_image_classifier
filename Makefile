@@ -40,3 +40,7 @@ run/uploaded/resnet:
 
 run/uploaded/alexnet:
 	pipenv run python check_images.py --dir uploaded_images/ --arch alexnet --dogfile dognames.txt
+
+
+test:
+	pipenv run python test_classifier.py
