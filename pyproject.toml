@@ -1,0 +1,21 @@
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+src = ["src"]
+exclude = ["migrations"]
+select = [
+    # Pycodestyle
+    # "E4",
+    # "E7",
+    # "E9",
+    "E",
+    # Pyflakes
+    "F",
+    # Isort
+    "I001"
+]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-wrap-aliases = true
+known-local-folder = ["apps", "conf", "tests"]

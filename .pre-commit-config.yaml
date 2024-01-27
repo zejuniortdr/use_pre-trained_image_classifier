@@ -1,0 +1,22 @@
+default_language_version:
+  python: python3
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.4.0
+    hooks:
+      - id: check-ast
+      - id: check-byte-order-marker
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: no-commit-to-branch
+      - id: trailing-whitespace
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.4
+    hooks:
+      - id: ruff
+        args: [ --fix ]
+
+      - id: ruff-format
