@@ -1,2 +1,2 @@
-# ai_programming_with_python
-Bertelsmann Udacity Course
+# Project: Use a Pre-trained Image Classifier to Identify Dog Breeds
+AI Programming with Python - Bertelsmann
