@@ -26,7 +26,7 @@
 #         This function does not output anything other than printing a summary
 #         of the final results.
 ##
-# TODO 6: Define print_results function below, specifically replace the None
+# DONE 6: Define print_results function below, specifically replace the None
 #       below by the function definition of the print_results function.
 #       Notice that this function doesn't to return anything because it
 #       prints a summary of the results using results_dic and results_stats_dic
@@ -99,7 +99,7 @@ def print_results(
         print("\nINCORRECT Dog/NOT Dog Assignments:")
 
         # process through results dict, printing incorrectly classified dogs
-        for key in results_dic:
+        for key, values in results_dic.items():
             # TODO: 6c. REPLACE pass with CODE that prints out the pet label
             #           and the classifier label from results_dic dictionary
             #           ONLY when the classifier function (classifier label)
@@ -118,7 +118,11 @@ def print_results(
             #
             # Pet Image Label is a Dog - Classified as NOT-A-DOG -OR-
             # Pet Image Label is NOT-a-Dog - Classified as a-DOG
-            pass
+
+            if values[3] == 1 and values[4] == 0:
+                print(f"[{values[1]}] Pet Image Label is a Dog - Classified as NOT-A-DOG")
+            elif values[3] == 0 and values[4] == 1:
+                print(f"[{values[1]}] Pet Image Label is NOT-a-Dog - Classified as a-DOG")
 
     # IF print_incorrect_breed == True AND there were dogs whose breeds
     # were incorrectly classified - print out these cases

@@ -31,7 +31,7 @@
 #           label isn't a dog.
 #
 ##
-# TODO 4: Define adjust_results4_isadog function below, specifically replace the None
+# DONE 4: Define adjust_results4_isadog function below, specifically replace the None
 #       below by the function definition of the adjust_results4_isadog function.
 #       Notice that this function doesn't return anything because the
 #       results_dic dictionary that is passed into the function is a mutable
@@ -91,7 +91,7 @@ def adjust_results4_isadog(results_dic, dogfile):
             if results_dic[key][1] in dognames_dic:
                 results_dic[key].extend((1, 1))
 
-            # TODO: 4c. REPLACE pass BELOW with CODE that adds the following to
+            # DONE: 4c. REPLACE pass BELOW with CODE that adds the following to
             #           results_dic dictionary for the key indicated by the
             #           variable key - append (1,0) to the value using
             #           the extend list function. This indicates
@@ -104,7 +104,7 @@ def adjust_results4_isadog(results_dic, dogfile):
 
         # Pet Image Label IS NOT a Dog image (e.g. NOT found in dognames_dic)
         else:
-            # TODO: 4d. REPLACE pass BELOW with CODE that adds the following to
+            # DONE: 4d. REPLACE pass BELOW with CODE that adds the following to
             #           results_dic dictionary for the key indicated by the
             #           variable key - append (0,1) to the value uisng
             #           the extend list function. This indicates
@@ -115,7 +115,7 @@ def adjust_results4_isadog(results_dic, dogfile):
             if results_dic[key][1] in dognames_dic:
                 results_dic[key].extend((0, 1))
 
-            # TODO: 4e. REPLACE pass BELOW with CODE that adds the following to
+            # DONE: 4e. REPLACE pass BELOW with CODE that adds the following to
             #           results_dic dictionary for the key indicated by the
             #           variable key - append (0,0) to the value using the
             #           extend list function. This indicates
