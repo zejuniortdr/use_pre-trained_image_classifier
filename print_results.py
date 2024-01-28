@@ -100,7 +100,7 @@ def print_results(
 
         # process through results dict, printing incorrectly classified dogs
         for key, values in results_dic.items():
-            # TODO: 6c. REPLACE pass with CODE that prints out the pet label
+            # DONE: 6c. REPLACE pass with CODE that prints out the pet label
             #           and the classifier label from results_dic dictionary
             #           ONLY when the classifier function (classifier label)
             #           misclassified dogs specifically:
